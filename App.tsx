@@ -6,13 +6,14 @@ import AI from './ROBO/AI' ;
 
 
 import { createStackNavigator } from '@react-navigation/stack';
+import SpeechToText from './ROBO/SpeechToText';
 
 const Stack = createStackNavigator();
 
 function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="AI" component={AI} options={{headerShown  : false}} />
+      <Stack.Screen name="AI" component={SpeechToText} options={{headerShown  : false}} />
     </Stack.Navigator>
   );
 }
